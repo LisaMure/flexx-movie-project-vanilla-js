@@ -133,16 +133,63 @@ body {
      padding: 50px 0;
 }
 
+/* Search Page */
+ .page-controls button, .back-btn {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid #F1C40F;
+ }
 
+ .page-controls button:hover, .back-btn:hover {
+  background-color: #F1C40F;
+  color:  black;
+ }
 
+ /* Movie Details Page */
 
+.movie-details h3, .movie-info h3 {
+ font-size: 24px;
+ font-weight: 700;
+ text-align: center;
+ margin-bottom: 30px;
+ margin-top: 100px;
+}
 
-  @media (max-width: 600px) {
+.genres, .info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.genres strong {
+  font-size: 14px;
+}
+
+.info-list li {
+  color: #F1C40F;
+}
+
+.info-list li span {
+  color: white
+}
+
+  @media (max-width: 700px) {
     .search-form-container form {
         width: 80%;
         max-width: 600px;
         margin: auto;
      
     }
+
+    /* .movies-container {
+      width: 100% !important;
+      margin: 0 !important;
+    } */
+  
+
     
   }
