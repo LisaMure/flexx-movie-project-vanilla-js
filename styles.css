@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin-top: 80px;
+    background-color: #020D18;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+
+.navbar a:link, a:visited {
+    text-decoration: none;
+    color: white !important
+  }
+
+  .navbar h4 {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .navbar-links a:hover, footer i:hover {
+    color: #F1C40F !important;
+  }
+
+  /* Now Playing Section */
+  .now-playing {
+    text-align: center;
+    padding: 80px;
+    background: url(../images/showcase-bg.jpg) no-repeat center center/cover;
+  }
+
+  .now-playing h3 {
+    color: white;
+    font-weight: 700 !important;
+    font-size: 24px;
+  }
+
+  /* Search Form */
+  .search-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    font-size: 17px;
+    color: white;
+}
+
+
+
+.search-form-container form {
+    width: 100%;
+    max-width: 600px;
+    margin:  0 auto !important;
+}
+
+  
+
+  .search-bar, .search-bar-btn {
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px;
+}
+.search-bar {
+      background-color: transparent;
+      width: 70%; 
+      color: white;
+  }
+
+::placeholder {     
+    color: white; 
+} 
+ 
+
+  .search-bar-btn {
+    background-color: #F1C40F;
+    max-width: 10%; 
+    padding-left: 40px;
+    padding-right: 50px;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .search-bar-btn:hover {
+    border: 1px solid #F1C40F;
+    background-color: transparent;
+    color: white;
+  }
+
+  /* Popular Movies */
+
+  .movies-container {
+    max-width: 75%;
+    margin: 0 auto;
+    color: white;
+  }
+
+  .movies-container h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+  }
+ 
+
+  .col img {
+    padding: 4px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background-color: #04376B;
+    color: white;
+    border-radius: 0px;
+    transition: all 300ms ease-in-out;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    }
+  
+
+  footer {
+    font-size: 25px;
+    font-weight: 700;
+    color: white; 
+  margin: 0 auto;
+  width: 75% !important;
+     padding: 50px 0;
+}
+
+
+
+
+
+  @media (max-width: 600px) {
+    .search-form-container form {
+        width: 80%;
+        max-width: 600px;
+        margin: auto;
+     
+    }
+    
+  }
