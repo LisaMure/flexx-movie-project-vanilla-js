@@ -14,7 +14,7 @@ body {
 }
 
 
-.navbar a:link, a:visited {
+.navbar a:link, a:visited, .col a:link {
     text-decoration: none;
     color: white !important
   }
@@ -29,6 +29,7 @@ body {
   }
 
   /* Now Playing Section */
+
   .now-playing {
     text-align: center;
     padding: 80px;
@@ -42,6 +43,7 @@ body {
   }
 
   /* Search Form */
+
   .search-form-container {
     display: flex;
     justify-content: center;
@@ -122,8 +124,8 @@ body {
     }
   
 
-
 /* Search Page */
+
  .page-controls button, .back-btn {
   padding: 5px 15px;
   background-color: transparent;
@@ -167,7 +169,8 @@ body {
   padding-left: 37px !important;
 }
 
-    /* Footer */
+/* Footer */
+
     footer {
     color: white; 
     margin: 0 auto;
@@ -195,7 +198,6 @@ body {
       padding: 0;
   }
 }
-
 
 @media (max-width: 700px) {
   .search-form-container form {
