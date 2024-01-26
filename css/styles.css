@@ -19,7 +19,7 @@ body {
     color: white !important
   }
 
-  .navbar h4 {
+  .navbar h4, footer {
     font-weight: 700;
     font-size: 25px;
   }
@@ -35,7 +35,7 @@ body {
     background: url(../images/showcase-bg.jpg) no-repeat center center/cover;
   }
 
-  .now-playing h3 {
+  .now-playing h3,  .media-details-container h2, .media-details h3, .media-info h3 {
     color: white;
     font-weight: 700 !important;
     font-size: 24px;
@@ -51,22 +51,19 @@ body {
     color: white;
 }
 
-
-
 .search-form-container form {
     width: 100%;
     max-width: 600px;
     margin:  0 auto !important;
 }
 
-  
-
   .search-bar, .search-bar-btn {
     border-radius: 5px;
     border: 1px solid white;
-    padding: 10px;
 }
+
 .search-bar {
+  padding: 10px;
       background-color: transparent;
       width: 70%; 
       color: white;
@@ -76,12 +73,10 @@ body {
     color: white; 
 } 
  
-
   .search-bar-btn {
     background-color: #F1C40F;
     max-width: 10%; 
-    padding-left: 40px;
-    padding-right: 50px;
+    padding: 10px 50px 10px 40px; 
     text-align: center;
     margin-left: 10px;
   }
@@ -92,18 +87,16 @@ body {
     color: white;
   }
 
-  /* Popular Movies */
+  /* Popular Movies & Shows */
 
-  .movies-container {
+  .media-details-container {
     max-width: 75%;
     margin: 0 auto;
     color: white;
   }
 
-  .movies-container h2 {
+  .media-details-container h2 {
     text-align: center;
-    font-weight: 700;
-    font-size: 24px;
   }
  
 
@@ -122,22 +115,17 @@ body {
   .card:hover {
     transform: scale(1.05);
     }
+
+    .card-body h5 {
+      font-size: 17px;
+      font-weight:700;
+    }
   
 
-  footer {
-    font-size: 25px;
-    font-weight: 700;
-    color: white; 
-  margin: 0 auto;
-  width: 75% !important;
-     padding: 50px 0;
-}
 
 /* Search Page */
  .page-controls button, .back-btn {
-  padding: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 5px 15px;
   background-color: transparent;
   color: white;
   border-radius: 4px;
@@ -151,12 +139,10 @@ body {
 
  /* Movie Details Page */
 
-.movie-details h3, .movie-info h3 {
- font-size: 24px;
- font-weight: 700;
+.media-details h3, .media-info h3 {
  text-align: center;
  margin-bottom: 30px;
- margin-top: 100px;
+ margin-top: 10%;
 }
 
 .genres, .info-list {
@@ -177,19 +163,45 @@ body {
   color: white
 }
 
-  @media (max-width: 700px) {
-    .search-form-container form {
-        width: 80%;
-        max-width: 600px;
-        margin: auto;
-     
-    }
+.custom-padding-md {
+  padding-left: 37px !important;
+}
 
-    /* .movies-container {
-      width: 100% !important;
-      margin: 0 !important;
-    } */
+    /* Footer */
+    footer {
+    color: white; 
+    margin: 0 auto;
+    width: 75% !important;
+    padding: 50px 0;
+  }
   
 
-    
+@media (max-width: 1200px) {
+   
+  .media-details-container {
+    max-width: 90% !important;
   }
+
+  footer {
+    width: 90% !important;
+  }
+
+  .media-details img {
+    width: 400px !important;
+    padding-left: 10px;
+  }
+
+  .custom-padding-md {
+      padding: 0;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .search-form-container form {
+      width: 80%;
+      max-width: 600px;
+      margin: auto;
+   
+  }  
+}

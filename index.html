@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flixx App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/c38dce8968.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -15,7 +15,7 @@
         <nav class=" fixed-top navbar justify-content-evenly 
         flex-nowrap flex-row"> 
         <div class="container"> 
-            <h4><a href="">FLIXX</a></h4> 
+            <h4><a href="/">FLIXX</a></h4> 
             <ul class="nav navbar-nav navbar-links  
            justify-content-evenly  
            flex-nowrap flex-row"> 
@@ -41,10 +41,10 @@
 </section>
 
 <section class="search-form-container"> 
-<form>
+<form action="/search.html">
   <div class="radio-btns">
-  <input type="radio" id="movie-search" name="search_radio" > <label>Movies</label>
-  <input type="radio" id="tv-show-search" name="search_radio"> <label >TV Shows</label>
+  <input type="radio" id="movie-search" name="type" checked> <label>Movies</label>
+  <input type="radio" id="tv-show-search" name="type"> <label >TV Shows</label>
 </div>
 <div class="search-input mt-3">
   <input class="search-bar" type="text"  placeholder="Enter search item">
@@ -53,12 +53,14 @@
 </form> 
 </section>
 
-<section class="pt-5 movies-container">
+<section class="pt-5 media-details-container">
   <h2 class="mb-4">POPULAR MOVIES</h2>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 mt-2">
     <div class="col">
       <div class="card h-100">
-        <img src="images/no-image.jpg" class="card-img-top" alt="...">
+      <a href="/movie-details.html">
+         <img src="images/no-image.jpg" class="card-img-top" alt="...">
+        </a>
         <div class="card-body">
           <h5 class="card-title">Movie Title </h5>
           <p class="card-text">Release: XX/XX/XXXX</p>
@@ -67,7 +69,9 @@
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="images/no-image.jpg" class="card-img-top" alt="...">
+        <a href="/movie-details.html">
+           <img src="images/no-image.jpg" class="card-img-top" alt="...">
+          </a>
         <div class="card-body">
           <h5 class="card-title">Movie Title </h5>
           <p class="card-text">Release: XX/XX/XXXX</p>
@@ -76,7 +80,9 @@
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="images/no-image.jpg" class="card-img-top" alt="...">
+        <a href="/movie-details.html">
+           <img src="images/no-image.jpg" class="card-img-top" alt="...">
+          </a>
         <div class="card-body">
           <h5 class="card-title">Movie Title </h5>
           <p class="card-text">Release: XX/XX/XXXX</p>
@@ -85,7 +91,9 @@
     </div>
     <div class="col">
       <div class="card h-100">
-        <img src="images/no-image.jpg" class="card-img-top" alt="...">
+        <a href="/movie-details.html">
+           <img src="images/no-image.jpg" class="card-img-top" alt="...">
+          </a>
         <div class="card-body">
           <h5 class="card-title">Movie Title </h5>
           <p class="card-text">Release: XX/XX/XXXX</p>
@@ -96,7 +104,9 @@
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 mt-2">
   <div class="col">
     <div class="card h-100">
-      <img src="images/no-image.jpg" class="card-img-top" alt="...">
+      <a href="/movie-details.html">
+         <img src="images/no-image.jpg" class="card-img-top" alt="...">
+        </a>
       <div class="card-body">
         <h5 class="card-title">Movie Title </h5>
         <p class="card-text">Release: XX/XX/XXXX</p>
@@ -105,7 +115,9 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="images/no-image.jpg" class="card-img-top" alt="...">
+      <a href="/movie-details.html">
+         <img src="images/no-image.jpg" class="card-img-top" alt="...">
+        </a>
       <div class="card-body">
         <h5 class="card-title">Movie Title </h5>
         <p class="card-text">Release: XX/XX/XXXX</p>
@@ -114,7 +126,9 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="images/no-image.jpg" class="card-img-top" alt="...">
+      <a href="/movie-details.html">
+         <img src="images/no-image.jpg" class="card-img-top" alt="...">
+        </a>
       <div class="card-body">
         <h5 class="card-title">Movie Title </h5>
         <p class="card-text">Release: XX/XX/XXXX</p>
@@ -123,7 +137,9 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="images/no-image.jpg" class="card-img-top" alt="...">
+      <a href="/movie-details.html">
+         <img src="images/no-image.jpg" class="card-img-top" alt="...">
+        </a>
       <div class="card-body">
         <h5 class="card-title">Movie Title </h5>
         <p class="card-text">Release: XX/XX/XXXX</p>
@@ -137,9 +153,9 @@
 <footer class="d-flex justify-content-between align-items-center">
   <span>FLIXX</span>
   <span class="d-flex">
-    <i class="fa-brands fa-facebook-f fa-sm me-2"></i>
-    <i class="fa-brands fa-instagram fa-sm me-2"></i>
-    <i class="fa-brands fa-x-twitter fa-sm me-2"></i>
+    <i class="fa-brands fa-facebook-f fa-xs me-2"></i>
+    <i class="fa-brands fa-x-twitter fa-xs me-2"></i>
+    <i class="fa-brands fa-instagram fa-xs me-2"></i>
   </span>
 </footer>
 
@@ -148,5 +164,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script></script>
   </body>
 </html>
