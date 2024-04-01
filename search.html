@@ -37,105 +37,36 @@
         </div>  
   </nav> 
 
-  <section class="search-form-container"> 
-    <form action="/search.html">
-      <div class="radio-btns">
-      <input type="radio" id="movie-search" name="type" checked> <label>Movies</label>
-      <input type="radio" id="tv-show-search" name="type"> <label >TV Shows</label>
+  <!-- Search Form -->
+  <section class="search-form-container">
+    <div id="alert"></div> 
+    <div class="form-container">
+        <form action="/search.html">
+            <div class="radio-btns">
+                <input type="radio" id="movie-search" name="type" value="movie" checked> 
+                <label for="movies">Movies</label>
+                <input type="radio" id="tv-show-search" name="type" value="tv"> 
+                <label for="shows">TV Shows</label>
+            </div>
+            <div class="search-input mt-3">
+                <input class="search-bar" type="text"  name="search-term" id="search-term" placeholder="Enter search item">
+                <button class="search-bar-btn" type="submit"> <i class="fas fa-search"></i></button>
+            </div>
+        </form> 
     </div>
-    <div class="search-input mt-3">
-      <input class="search-bar" type="text"  placeholder="Enter search item">
-    <button class="search-bar-btn"type="submit"> <i class="fas fa-search"></i></button>
-    </div>
-    </form> 
-    </section>
+</section>
 
+<!-- Search Results -->
 <section class="pt-5 media-details-container">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 mt-2">
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/no-image.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Movie Or Show Name </h5>
-          <p class="card-text">Release: XX/XX/XXXX</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/no-image.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Movie Or Show Name </h5>
-          <p class="card-text">Release: XX/XX/XXXX</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/no-image.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Movie Or Show Name </h5>
-          <p class="card-text">Release: XX/XX/XXXX</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="images/no-image.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Movie Or Show Name </h5>
-          <p class="card-text">Release: XX/XX/XXXX</p>
-        </div>
-      </div>
-    </div>
+  <div id="search-results-heading"></div>
+  <div id="search-results" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 mt-2">
   </div>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 mt-2">
-  <div class="col">
-    <div class="card h-100">
-      <img src="images/no-image.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Movie Or Show Name </h5>
-        <p class="card-text">Release: XX/XX/XXXX</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="images/no-image.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Movie Or Show Name </h5>
-        <p class="card-text">Release: XX/XX/XXXX</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="images/no-image.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Movie Or Show Name </h5>
-        <p class="card-text">Release: XX/XX/XXXX</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="images/no-image.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Movie Or Show Name </h5>
-        <p class="card-text">Release: XX/XX/XXXX</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="page-controls mt-3">
-  <button>Prev</button>
-  <button>Next</button>
-  <p class="mt-2">Page <span>1</span> of <span>5</span> </p>
-</div>
+
+<div class="page-controls mt-3" id="pagination"></div>
 
 </section>
 
-
+<!-- Footer -->
 <footer class="d-flex justify-content-between align-items-center">
   <span>FLIXX</span>
   <span class="d-flex">
@@ -150,8 +81,6 @@
 
 </div>
       
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script></script>
   </body>

@@ -42,16 +42,71 @@ body {
     font-size: 24px;
   }
 
+  /* Slider */
+  .swiper {
+   width: 100%;
+   height: 50%;
+  }
+
+  .swiper-slide {
+   text-align: center;
+    font-size: 18px;
+    background-color:#020D18;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-rating {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+
+  }
+
+  .fa-star {
+    color: #F1C40F !important;
+  }
+
   /* Search Form */
 
   .search-form-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 30vh;
     font-size: 17px;
     color: white;
-}
+  }
+  
+  .alert {
+    margin: 30px 0;  
+    color: white;
+    border-radius: 4px;
+  }
+
+  .alert-success {
+  background: green;
+  }
+
+  .alert-error {
+  background: red;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
 .search-form-container form {
     width: 100%;
@@ -126,6 +181,10 @@ body {
 
 /* Search Page */
 
+#search-results-heading {
+ text-transform: uppercase;
+}
+
  .page-controls button, .back-btn {
   padding: 5px 15px;
   background-color: transparent;
@@ -134,10 +193,19 @@ body {
   border: 1px solid #F1C40F;
  }
 
- .page-controls button:hover, .back-btn:hover {
-  background-color: #F1C40F;
-  color:  black;
+ .page-controls button:hover:not([disabled]),
+ .back-btn:hover:not([disabled]) {
+   background-color: #F1C40F;
+   color: black;
  }
+
+ .page-controls button[disabled],
+ .back-btn[disabled] {
+   opacity: 0.6;
+   cursor: not-allowed;
+ }
+
+
 
  /* Movie Details Page */
 
