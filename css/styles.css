@@ -275,3 +275,13 @@ body {
    
   }  
 }
+
+@media (max-width: 500px) {
+
+  .search-bar {
+    width: 100%;
+  }
+  .search-bar-btn{
+    display: none !important;
+  }
+}
